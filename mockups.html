@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cold Cold Iron Lantern — Trade Dress Mockups</title>
+<link rel="stylesheet" href="https://use.typekit.net/hwz3oko.css">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --black: #0a0a0a;
+  --charcoal: #141210;
+  --dark: #1a1815;
+  --amber: #d4871c;
+  --amber-glow: #e8a33a;
+  --amber-dim: #8b5e14;
+  --cream: #e8dcc8;
+  --cream-dim: #b8a98e;
+  --parchment: #d4c5a9;
+  --font-heading: 'itc-benguiat', serif;
+  --font-body: 'nocturne-serif', Georgia, serif;
+}
+
+body {
+  font-family: var(--font-body);
+  background: #1a1a1a;
+  color: var(--cream);
+  padding: 3rem 2rem;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--amber);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+
+.intro {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 4rem;
+  color: var(--cream-dim);
+  font-size: 1.1rem;
+}
+
+.mockup-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+
+.mockup-section {
+  margin-bottom: 5rem;
+}
+
+.section-title {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  color: var(--amber);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Product Cover Mockup */
+.product-cover {
+  background: linear-gradient(135deg, var(--charcoal) 0%, var(--dark) 100%);
+  border: 2px solid var(--amber-dim);
+  aspect-ratio: 8.5 / 11;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+}
+
+.product-cover::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E");
+  pointer-events: none;
+}
+
+.cover-header {
+  position: relative;
+  z-index: 1;
+  border-bottom: 1px solid var(--amber-dim);
+  padding-bottom: 1rem;
+  margin-bottom: auto;
+}
+
+.cover-logo {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--amber);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cover-main {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.cover-title {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: var(--cream);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 20px rgba(212, 135, 28, 0.3);
+}
+
+.cover-subtitle {
+  font-family: var(--font-body);
+  font-style: italic;
+  font-size: 1rem;
+  color: var(--cream-dim);
+  margin-bottom: 2rem;
+}
+
+.cover-art-placeholder {
+  width: 80%;
+  max-width: 200px;
+  aspect-ratio: 1;
+  margin: 0 auto;
+  background: radial-gradient(ellipse, rgba(212, 135, 28, 0.15) 0%, transparent 70%);
+  border: 1px dashed var(--amber-dim);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  opacity: 0.6;
+}
+
+.cover-footer {
+  position: relative;
+  z-index: 1;
+  border-top: 1px solid var(--amber-dim);
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.75rem;
+  color: var(--cream-dim);
+}
+
+.cover-footer .system {
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--amber);
+}
+
+/* Interior Page Mockup */
+.interior-page {
+  background: var(--parchment);
+  color: var(--charcoal);
+  padding: 2.5rem 2rem;
+  aspect-ratio: 8.5 / 11;
+  position: relative;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+  overflow: hidden;
+}
+
+.interior-page::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.95' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.15'/%3E%3C/svg%3E");
+  pointer-events: none;
+}
+
+.page-content {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header {
+  border-bottom: 2px solid var(--amber-dim);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.page-number {
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  color: var(--amber-dim);
+}
+
+.page-title {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: var(--charcoal);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+
+.page-body {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  columns: 2;
+  column-gap: 1.5rem;
+  flex: 1;
+}
+
+.page-body p {
+  margin-bottom: 0.75rem;
+}
+
+.page-body strong {
+  font-weight: 700;
+  color: var(--amber-dim);
+}
+
+.stat-block {
+  background: rgba(139, 94, 20, 0.08);
+  border-left: 3px solid var(--amber-dim);
+  padding: 1rem;
+  margin: 1rem 0;
+  break-inside: avoid;
+  column-span: all;
+}
+
+.stat-block-title {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--charcoal);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+}
+
+.stat-line {
+  font-size: 0.85rem;
+  margin-bottom: 0.25rem;
+}
+
+/* DriveThru Thumbnail */
+.thumbnail-mockup {
+  background: linear-gradient(135deg, var(--charcoal) 0%, var(--dark) 100%);
+  border: 2px solid var(--amber-dim);
+  aspect-ratio: 1;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+}
+
+.thumbnail-mockup::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at center, rgba(212, 135, 28, 0.12) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.thumbnail-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.thumbnail-title {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: var(--cream);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  line-height: 1.2;
+  position: relative;
+  z-index: 1;
+  text-shadow: 0 0 15px rgba(212, 135, 28, 0.4);
+}
+
+.thumbnail-publisher {
+  font-family: var(--font-heading);
+  font-size: 0.6rem;
+  color: var(--amber);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-top: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.mockup-caption {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: var(--cream-dim);
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .mockup-grid {
+    grid-template-columns: 1fr;
+  }
+  .page-body {
+    columns: 1;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>🏮 Cold Cold Iron Lantern</h1>
+  <p class="intro">Trade dress mockups — consistent visual identity across all products</p>
+
+  <!-- COVERS -->
+  <div class="mockup-section">
+    <h2 class="section-title">Product Covers</h2>
+    <div class="mockup-grid">
+      
+      <div>
+        <div class="product-cover">
+          <div class="cover-header">
+            <div class="cover-logo">🏮 Cold Iron Lantern</div>
+          </div>
+          <div class="cover-main">
+            <h2 class="cover-title">The Crimson Vault</h2>
+            <p class="cover-subtitle">A Shadowdark Adventure for 3rd-Level Characters</p>
+            <div class="cover-art-placeholder">⚔️</div>
+          </div>
+          <div class="cover-footer">
+            <span class="system">Shadowdark RPG</span>
+            <span>24 pages</span>
+          </div>
+        </div>
+        <p class="mockup-caption">Adventure Module Cover</p>
+      </div>
+
+      <div>
+        <div class="product-cover">
+          <div class="cover-header">
+            <div class="cover-logo">🏮 Cold Iron Lantern</div>
+          </div>
+          <div class="cover-main">
+            <h2 class="cover-title">Tomb of the Hollow King</h2>
+            <p class="cover-subtitle">An OSR Dungeon Crawl</p>
+            <div class="cover-art-placeholder">💀</div>
+          </div>
+          <div class="cover-footer">
+            <span class="system">OSR Compatible</span>
+            <span>32 pages</span>
+          </div>
+        </div>
+        <p class="mockup-caption">OSR Module Cover</p>
+      </div>
+
+      <div>
+        <div class="product-cover">
+          <div class="cover-header">
+            <div class="cover-logo">🏮 Cold Iron Lantern</div>
+          </div>
+          <div class="cover-main">
+            <h2 class="cover-title">Relics & Ruin</h2>
+            <p class="cover-subtitle">100 Magical Items for Dark Fantasy Campaigns</p>
+            <div class="cover-art-placeholder">📜</div>
+          </div>
+          <div class="cover-footer">
+            <span class="system">System Neutral</span>
+            <span>16 pages</span>
+          </div>
+        </div>
+        <p class="mockup-caption">Supplement Cover</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- INTERIOR PAGES -->
+  <div class="mockup-section">
+    <h2 class="section-title">Interior Page Layout</h2>
+    <div class="mockup-grid">
+      
+      <div>
+        <div class="interior-page">
+          <div class="page-content">
+            <div class="page-header">
+              <h3>The Crimson Vault</h3>
+              <span class="page-number">— 4 —</span>
+            </div>
+            <h4 class="page-title">Area 3: The Blood Chamber</h4>
+            <div class="page-body">
+              <p>The air grows thick with the smell of iron and decay. Crimson stains streak the walls, still wet despite the centuries that have passed. A low hum resonates from deeper within the vault.</p>
+              <p><strong>At a Glance:</strong> This circular chamber once served as a ritual space for the cult. The stone floor is etched with sigils that pulse with faint amber light.</p>
+              <p><strong>What's Here:</strong> Three stone altars ring the room, each bearing the skeletal remains of a sacrifice. Candles flicker with ghostly flames that cast no heat.</p>
+              
+              <div class="stat-block">
+                <div class="stat-block-title">Hollow Cultist</div>
+                <div class="stat-line"><strong>AC:</strong> 14 | <strong>HP:</strong> 22 | <strong>ATK:</strong> +4 (1d8+2)</div>
+                <div class="stat-line"><strong>MV:</strong> near | <strong>S:</strong> +2, <strong>D:</strong> +1, <strong>C:</strong> +0</div>
+                <div class="stat-line"><strong>Special:</strong> Immune to fear, vulnerable to radiant damage</div>
+              </div>
+
+              <p><strong>Treasure:</strong> Hidden beneath the central altar: a tarnished silver chalice (50gp) and a scroll of <em>Dispel Magic</em>.</p>
+              <p><strong>Secret:</strong> DC 15 Intelligence check reveals a hidden passage behind the western altar leading to Area 4.</p>
+            </div>
+          </div>
+        </div>
+        <p class="mockup-caption">Two-column interior layout with stat blocks</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- THUMBNAILS -->
+  <div class="mockup-section">
+    <h2 class="section-title">Storefront Thumbnails</h2>
+    <div class="mockup-grid">
+      
+      <div>
+        <div class="thumbnail-mockup">
+          <div class="thumbnail-icon">⚔️</div>
+          <h3 class="thumbnail-title">The Crimson Vault</h3>
+          <div class="thumbnail-publisher">Iron Lantern</div>
+        </div>
+        <p class="mockup-caption">DriveThruRPG / Itch.io thumbnail (square format)</p>
+      </div>
+
+      <div>
+        <div class="thumbnail-mockup">
+          <div class="thumbnail-icon">💀</div>
+          <h3 class="thumbnail-title">Tomb of the Hollow King</h3>
+          <div class="thumbnail-publisher">Iron Lantern</div>
+        </div>
+        <p class="mockup-caption">Instantly recognizable at small sizes</p>
+      </div>
+
+      <div>
+        <div class="thumbnail-mockup">
+          <div class="thumbnail-icon">📜</div>
+          <h3 class="thumbnail-title">Relics & Ruin</h3>
+          <div class="thumbnail-publisher">Iron Lantern</div>
+        </div>
+        <p class="mockup-caption">Consistent branding across product types</p>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
